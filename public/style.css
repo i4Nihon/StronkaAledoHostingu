@@ -1,0 +1,30 @@
+body {
+  background: #757575;
+}
+
+#conteiner{
+    margin: 3%;
+    text-align: center;
+}
+
+.title{
+    color: black;
+    height: 15%;
+    text-align: center;
+}
+
+#nav{
+    margin: 4%;
+    width: 10%;
+    float: left;
+    text-align: center;
+    background-color: dimgray;
+}
+#content{
+    text-align: center;
+    width: 80%;
+    float: left;
+}
+.hl{
+    width: 80%
+}

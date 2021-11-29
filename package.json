@@ -1,0 +1,24 @@
+{
+  "name": "stronka-hosting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serveer.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i4Nihon/stronka2.git"
+  },
+  "author": "JeczmienM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i4Nihon/stronka2/issues"
+  },
+  "homepage": "https://github.com/i4Nihon/stronka2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
