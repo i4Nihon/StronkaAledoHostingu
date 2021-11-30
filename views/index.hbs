@@ -21,8 +21,16 @@
 
   </div>
   <div id="content">
-    <button onclick="startTimer()">Start</button>
-    <button onclick="stopTimer()">Stop</button>
+    <ul id="buttons">
+      <li><button onclick="startTimer()">Start</button></li>
+      <li><button onclick="stopTimer()">Stop</button></li>
+
+      <li><button onclick="resetTimer()">Reset</button></li>
+    </ul>
+
+    <div id="stopWatch">
+      00:00:0
+    </div>
     <script type="text/javascript" src="/script.js"></script>
 
   </div>
