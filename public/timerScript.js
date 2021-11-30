@@ -1,8 +1,8 @@
-const timer = document.getElementById('stopWatch');
+const timer = document.getElementById('timer');
 
-var msec = 0;
-var sec = 0;
-var min = 0;
+var hour = document.getElementById("hr");
+var min = document.getElementById("min");
+var sec =  document.getElementById("sec");
 var stoptime = true;
 
 
@@ -12,13 +12,17 @@ function timerCycle() {
     if (stoptime == false) {
     sec = parseInt(sec);
     min = parseInt(min);
+    hour = parseInt(hour);
     
+    if (hour == null) hour = 0
+    if (min == null) min = 0
+    if (sec == null) sec = 0
 
-    msec = msec + 1;
+    sec = sec -1
 
-    if (msec == 10) {
+    if (sec == 00) {
       sec = sec + 1;
-      msec = 0;
+      msec = 59;
     }
     if (sec == 60) {
       min = min + 1

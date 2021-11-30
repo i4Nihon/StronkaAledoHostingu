@@ -7,7 +7,7 @@
 
 <body link="#6699CC" vlink="#00FFCC" alink="#CC00FF">
   <div class="title">
-    <h1> MAIN STIE WITH STOPWATCH </h1>
+    <h1> TIMER </h1>
 
   </div>
   <div id="nav">
@@ -19,22 +19,20 @@
     <a href="/buttons">buttons</a>
     <hr />
     <a href="/timer">timer</a>
-    <hr />
+    <hr />  
   </div>
   <div id="content">
 
-    <ul id="buttons">
-      <li><button onclick="startTimer()">Start</button></li>
-      <li><button onclick="stopTimer()">Stop</button></li>
+    <form action="/timerScript.js">
+      <input type="text" id="sec">
+      <input type="text" id="min">
+      <input type="text" id="hr">
+      <button id="submit">Start!</button>
+    </form>
 
-      <li><button onclick="resetTimer()">Reset</button></li>
-
-    </ul>
-    <div id="stopWatch">
-      00:00:0
-    </div>
-
-    <script type="text/javascript" src="/script.js"></script>
-
+  <div id="timer">
+    00:00:00
   </div>
+  </div>
+
 </body>

@@ -20,10 +20,14 @@ app.get("/buttons", (req, res) => {
     res.render("buttons.hbs")
 })
 
+app.get("/timer", (req, res) => {
+    res.render("timer.hbs")
+})
 
 
-app.listen(port, (e)=>{
-    if (e) {
+
+app.listen(port, (err)=>{
+    if (err) {
         console.log("ERROR\n\n\n" + e)
     }
     console.log("Server is running!")

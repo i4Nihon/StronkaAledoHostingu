@@ -18,6 +18,8 @@
         <hr />
         <a href="/buttons">buttons</a>
         <hr />
+        <a href="/timer">timer</a>
+        <hr />
       </div>
       <div id="content">
         <h1 id="para"></h1>
@@ -27,16 +29,15 @@
           function show() { const now = new Date(); var godzina =
           now.getHours(); var minuta = now.getMinutes(); var sekunda =
           now.getSeconds(); if (minuta < 10) minuta = "0" + minuta; if (sekunda
-          < 10) sekunda = "0" + sekunda; const hour = "Hour: " + godzina +
-          ":" + minuta + ":" + sekunda;
-          document.getElementById("para").innerHTML = hour; }
-          window.setInterval(() => { show(); }, 1000); function UTC() { const
-          now = new Date(); const secouds = now.getUTCSeconds(); const minutes =
-          now.getUTCMinutes(); const hours = now.getUTCHours(); if (minutes <
-          10) minutes = "0" + minutes; if (secouds < 10) secouds = "0" +
-          secouds; const UTChour = "UTC TIME: " + hours + ":" + minutes + ":" +
-          secouds; document.getElementById("paraUTC").innerHTML = UTChour; }
-          window.setInterval(() => { UTC(); }, 1000);
+          < 10) sekunda = "0" + sekunda; const hour = "Hour: " + godzina + ":" +
+          minuta + ":" + sekunda; document.getElementById("para").innerHTML =
+          hour; } window.setInterval(() => { show(); }, 1000); function UTC() {
+          const now = new Date(); const secouds = now.getUTCSeconds(); const
+          minutes = now.getUTCMinutes(); const hours = now.getUTCHours(); if
+          (minutes < 10) minutes = "0" + minutes; if (secouds < 10) secouds =
+          "0" + secouds; const UTChour = "UTC TIME: " + hours + ":" + minutes +
+          ":" + secouds; document.getElementById("paraUTC").innerHTML = UTChour;
+          } window.setInterval(() => { UTC(); }, 1000);
         </script>
         <script type="text/javascript" src="/dateScript.js"></script>
       </div>
