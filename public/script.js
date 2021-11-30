@@ -52,9 +52,9 @@ function stopTimer() {
 }
 
 function resetTimer() {
-    timer.innerHTML = '00:00:00';
+    timer.innerHTML = '00:00:0';
     
-    hr=0
+    msec=0
     min=0
-    sec=00
+    sec=0
 }
